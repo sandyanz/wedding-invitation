@@ -1,0 +1,87 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    padding: 2rem;
+    border: solid 1px;
+}
+
+.tab {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 2rem;
+    border: solid 1px;
+    width: 25%;
+}
+
+.tab-btn {
+    margin: .5rem;
+    
+    padding: 0.50rem;
+    text-align: left;
+
+
+}
+.btn {
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    background-color: antiquewhite;
+    width: 10rem;
+}
+
+.form {
+    margin: 1rem;
+    padding: 2rem;
+    border: solid 1px;
+    width: 25%;
+}
+/*
+.template {
+    margin: 1rem;
+    padding: 2rem;
+    border: solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   text-align: center;
+    width: 50%;
+    
+}
+
+.child-template {
+    background-image: url("Images/Background-summer3.jpg");
+    background-repeat: no-repeat;
+    height: 500px;
+   
+    background-position: center;
+    display: block;
+    width: 100%;
+}
+*/
+.template {
+    margin: 1rem;
+    padding: 2rem;
+    border: solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height:500px;
+    background-image: url("Images/Background-summer3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: block;
+}
+
+.child-template {
+    height: 75%;
+    width: 45%;
+}
+@media (max-width: 800px) {
+    .main {
+      flex-direction: column;
+    }
+  }

@@ -33,33 +33,24 @@
 
 .form {
     margin: 1rem;
-    padding: 2rem;
-    border: solid 1px;
+    padding: 20px;
+    border-radius: 5px;
     width: 25%;
+    background-color: #f2f2f2;
 }
-/*
-.template {
-    margin: 1rem;
-    padding: 2rem;
-    border: solid 1px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   text-align: center;
-    width: 50%;
-    
+input[type=text],textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+
 }
 
-.child-template {
-    background-image: url("Images/Background-summer3.jpg");
-    background-repeat: no-repeat;
-    height: 500px;
-   
-    background-position: center;
-    display: block;
-    width: 100%;
-}
-*/
+
 .template {
     margin: 1rem;
     padding: 2rem;
@@ -74,11 +65,15 @@
     background-position: center;
     background-size: contain;
     display: block;
+    position: relative;
 }
 
 .child-template {
     height: 75%;
     width: 45%;
+    position: absolute;
+    left:30%;
+    top:10%;
 }
 @media (max-width: 800px) {
     .main {

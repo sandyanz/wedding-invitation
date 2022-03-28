@@ -3,16 +3,17 @@
     flex-direction: row;
     margin: 1rem;
     padding: 2rem;
-    border: solid 1px;
+   
 }
 
 .tab {
     display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    padding: 2rem;
-    border: solid 1px;
-    width: 25%;
+    flex-direction: row;
+    margin: 0.5rem;
+    padding: 1rem;
+ 
+    justify-content: center;
+   
 }
 
 .tab-btn {
@@ -31,11 +32,14 @@
     width: 10rem;
 }
 
+
 .form {
+    display: flex;
+    flex-direction: column;
     margin: 1rem;
     padding: 20px;
     border-radius: 5px;
-    width: 25%;
+    width: 50%;
     background-color: #f2f2f2;
 }
 input[type=text],textarea {
@@ -46,7 +50,7 @@ input[type=text],textarea {
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
-    resize: vertical;
+    resize: horizontal;
 
 }
 
@@ -54,7 +58,7 @@ input[type=text],textarea {
 .template {
     margin: 1rem;
     padding: 2rem;
-    border: solid 1px;
+  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,17 +70,94 @@ input[type=text],textarea {
     background-size: contain;
     display: block;
     position: relative;
+    background-color: white
 }
 
 .child-template {
     height: 75%;
     width: 45%;
-    position: absolute;
-    left:30%;
-    top:10%;
+    position: relative;
+    left: 39%;
+    top:2%;
 }
+.shortname{
+    display: inline;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #52200B;
+    font-weight: 400;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: italic;
+    font-variant: normal;
+    font-weight: bolds;
+    text-transform: capitalize;
+    text-align: center;
+    height: fit-content;
+    width: 50%;
+    margin: 0.5rem;
+   
+}
+.form-text{
+    margin: 0.25rem;
+    padding: 0.25rem;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #52200B;
+    font-weight: 400;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: italic;
+    font-variant: normal;
+    font-weight: bolds;
+    text-transform: capitalize;
+    text-align: center;
+    height: fit-content;
+    width: 50%;
+
+
+
+}
+.msg-text{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #52200B;
+    font-weight: 400;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: italic;
+    font-variant: normal;
+    text-align: center;
+    height: 50%;
+    width: 50%;
+    overflow:hidden
+
+}
+
 @media (max-width: 800px) {
     .main {
       flex-direction: column;
+    }
+    .tab {
+        margin: 0.1rem;
+        padding: 0.1rem;
+     
+    }
+    .tab-btn {
+        margin: .1rem;   
+        padding: 0.10rem;
+        text-align: left;
+    }
+    .btn {
+        padding: 0.2rem;
+        font-size: 1rem;
+        text-align: center;
+        background-color: antiquewhite;
+        width: 5rem;
     }
   }

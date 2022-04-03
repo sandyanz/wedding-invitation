@@ -6,25 +6,21 @@ document.addEventListener('keydown', function (event) {
         document.getElementById('t1-short-and').innerText = '&';
         document.getElementById('t1-fname').innerText = event.target.value;
         document.getElementById('t1-fname-and').innerText = '&';
-
+        
         document.getElementById('t2-short-fname').innerText = event.target.value[0].toUpperCase();
         document.getElementById('t2-short-and').innerText = '&';
         document.getElementById('t2-fname').innerText = event.target.value;
         document.getElementById('t2-fname-and').innerText = '&';
-
 
         document.getElementById('t3-short-fname').innerText = event.target.value[0].toUpperCase();
         document.getElementById('t3-short-and').innerText = '&';
         document.getElementById('t3-fname').innerText = event.target.value;
         document.getElementById('t3-fname-and').innerText = '&';
 
-
         document.getElementById('t4-short-fname').innerText = event.target.value[0].toUpperCase();
         document.getElementById('t4-short-and').innerText = '&';
         document.getElementById('t4-fname').innerText = event.target.value;
         document.getElementById('t4-fname-and').innerText = '&';
-
-
     }
     if (event.target.id === 'sname') {
         document.getElementById('t1-short-sname').innerText = event.target.value[0].toUpperCase();
